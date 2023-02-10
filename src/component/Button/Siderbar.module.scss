@@ -1,0 +1,34 @@
+.siderbarItem{
+    position: relative;
+    width: 150px;
+    height: 43px;
+    left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+    border-bottom: 1px solid #5C5C5C
+}
+//color
+.inactive{
+    color: #AAAAAA;
+}
+.active{
+    color: #FFFFFF;
+}
+.target{
+    color: #FFFFFF;
+    background: #5C5C5C;
+}
+.text{
+position: absolute;
+width: 43px;
+height: 19px;
+left: 16px;
+top: 14px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+}
