@@ -43,18 +43,27 @@ table {
 	border-spacing: 0;
 }
 
+p{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
 //app css
 
 .Background{
-  position: absolute;
+  position: relative;
   width: 1918px;
   height: 935px;
-
+  display: flex;
   background: #FFFFFF;
 }
 
 .Sidebar{
-  position: absolute;
+  position: relative;
   width: 150px;
   height: 935px;
   border-radius: 0px;
@@ -62,27 +71,63 @@ table {
   flex-direction: column;
   background: #191718;
 }
-
-.Content{
-  height: 935px;
-  width: 1768px;
-  border-radius: 0px;
+.wrapper{
   display: flex;
-  background: #FFFFFF;
+  flex-direction: column;
+}
+.content{
+   position: relative;
+   padding-left: 150px;
+    border-radius: 0px;
+    display: flex;
+    background: #FFFFFF;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
 }
 .logo{
-  position: absolute;
+  padding: 20px 0px 30px;
   width: 310px;
   height: 122px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro{
+width: 1510px;
+height: 210px;
+background: #EFEFEF;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+&>h3,
+&>p{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+&>h3{
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+&>p{
+  width: 972px;
+  height: 95px;
+}
 }
 
 .footer{
-  height: 79px;
-  width: 1768px;
-  left: 150px;
-  top: 1794px;
-  border-radius: 0px;
+  margin-top: 182px;
+  margin-inline-start: 200px;
+  /* identical to box height */
+  color: #3E3E3E;
 }
 
 
